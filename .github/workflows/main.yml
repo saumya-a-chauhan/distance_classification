@@ -1,0 +1,16 @@
+name: Auto-run Jupyter Notebook
+on: [push]
+jobs:
+  run-notebook:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      - name: Install Dependencies
+        run: pip install numpy pandas scikit-learn jupyter nbconvert
+      - name: Run Jupyter Notebook
+        run: jupyter nbconvert --to notebook --execute distance_classification.ipynb
