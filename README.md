@@ -1,9 +1,9 @@
-# Distance-Based Classification Project 🚀
+Distance-Based Classification Project 
 
-## 📌 Overview
+## Overview
 This project applies distance-based classification using different distance metrics.
 
-## 🛠️ Setup & Installation
+##  Setup & Installation
 1. Clone the repository:
    ```bash
    git clone https://github.com/YOUR_USERNAME/distance_classification.git
@@ -22,15 +22,21 @@ This project applies distance-based classification using different distance metr
    docker run -p 8888:8888 distance_classification
    ```
 
-## 📊 Findings
-- **Accuracy**: X%
-- **Best Distance Metric**: Euclidean (or other)
-- **Performance Comparisons**: See charts below
 
-![Sample Graph](images/performance_chart.png)
+##  Findings
+
+### Clustered Faces Based on Hue and Saturation
+![Clustered Faces](images/Clustered%20Faces%20Based%20on%20Hue%20and%20Saturation.png)
+
+### K-Means Clustering of Faces Based on Hue and Saturation
+![K-Means Clustering](images/K-Means%20Clustering%20of%20Faces%20Based%20on%20Hue%20and%20Saturation.png)
+
+### Template Image Classification
+![Template Image Classification](images/Template%20Image%20Classification.png)
+
 
 ## 🚀 Automation
 - This project uses **GitHub Actions** to automatically rerun the notebook when code is updated.
 
 ## 🔗 Submission
-- **GitHub Repository**: [Your Repo Link](https://github.com/YOUR_USERNAME/distance_classification)
+- **GitHub Repository**: (https://github.com/saumya-a-chauhan/distance_classification)
