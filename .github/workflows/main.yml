@@ -19,7 +19,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install opencv-python-headless numpy pandas scikit-learn jupyter nbconvert
 
+      - name: Install System Dependencies (if needed)
+        run: sudo apt-get update && sudo apt-get install -y libgl1
+
       - name: Run Jupyter Notebook
         run: |
-          set -e  # Stop execution if any command fails
-          jupyter nbconvert --to notebook --execute distance_classification.ipynb
+          jupyter nbconvert --to notebook --execute distance_classification.ipynb --output executed_notebook.ipynb
